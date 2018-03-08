@@ -1,0 +1,23 @@
+li[data-current-page='true']{
+  color: #fff;
+  background: #222;
+}
+
+li[data-page]{
+  padding: .5em 1em;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+li[data-current-page='false']:hover{
+  color: #fff;
+  background: #ccc;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+}
