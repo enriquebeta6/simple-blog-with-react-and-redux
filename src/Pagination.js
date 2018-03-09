@@ -63,7 +63,6 @@ class Pagination extends Component {
   render() {
     return (
       <div>
-        <h2>Pagination</h2>
         <ul onClick={this.handleClick}>
           {this.pages()}
         </ul>

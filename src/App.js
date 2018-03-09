@@ -34,19 +34,17 @@ const Header = () => {
 
 const App = (props) => {
   return props.session !== null
-    ? 
-      <Router> 
+    ?
+      <Router>
         <div>
           <AuthHeader />
-          
+
           <Route exact path='/' component={Home} />
           <Route exact path='/post/:id' component={Post} />
           <Route exact path='/:user/post/:id' component={Post} />
           <Route exact path='/:user/posts' component={UserPosts} />
           <Route exact path='/:user/create' component={CrearPost} />
           <Route exact path='/:user/post/:id/editar' component={EditarPost} />
-
-          <h2>App Aut</h2>
         </div>
       </Router>
     :
@@ -57,7 +55,6 @@ const App = (props) => {
           <Route path='/signup' component={Signup} />
           <Route path='/login' component={Login} />
           <Route exact path='/post/:id' component={Post} />
-          <h2>App</h2>
         </div>
       </Router>
   ;
